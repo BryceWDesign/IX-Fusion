@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you cite IX-Fusion, cite this repository and state the evaluated release/version."
+title: "IX-Fusion: C6-Seeded Stellarator Research and Evaluation Framework"
+type: software
+authors:
+  - family-names: Lovell
+    given-names: Bryce
+version: 0.1.0
+date-released: 2026-08-15
+license: LicenseRef-IX-Fusion-Eval-Only-1.0
+repository-code: "https://github.com/BryceWDesign/IX-Fusion"
+keywords:
+  - stellarator
+  - fusion
+  - omnigenity
+  - magnetic confinement
+  - computational physics
+  - validation

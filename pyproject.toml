@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ix-fusion"
+version = "0.1.0"
+description = "Evaluation-only computational research framework for C6-seeded stellarator hypothesis testing."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "LicenseRef-IX-Fusion-Eval-Only-1.0"}
+authors = [{name = "Bryce Lovell"}]
+dependencies = [
+  "numpy>=2.0,<3",
+  "matplotlib>=3.8,<4",
+]
+
+[project.scripts]
+ix-fusion = "ix_fusion.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
